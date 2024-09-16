@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealTech 氣象中心</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6e45e2, #88d3ce);
+        }
+        .alert {
+            background: #ffdddd;
+            color: #d8000c;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 16px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .title img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .title h1 {
+            margin: 0;
+            font-size: 26px;
+            color: #333;
+            letter-spacing: 1px;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            color: #ffffff;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-decoration: none; /* 確保按鈕內部文字沒有下劃線 */
+        }
+        .button:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, #0056b3, #007bff);
+        }
+        .button i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .credits {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert">
+        嘉義地區目前地震頻繁，請注意安全。
+    </div>
+    <div class="container">
+        <div class="title">
+            <img src="https://i.imgur.com/tH1SjrW.png" alt="Logo">
+            <h1>氣象中心</h1>
+        </div>
+        <a href="https://x-flight-together.github.io/CWA-Earthquake-Reports/" class="button">
+            <i class="fa-solid fa-house-chimney-crack"></i> 地震報告 ERV
+        </a>
+        <a href="https://x-flight-together.github.io/Real-Time-Weather-CWA/" class="button">
+            <i class="fas fa-cloud-sun"></i> 氣象測站資料 WRV
+        </a>
+        <div class="credits">© RealTech 2024</div>
+    </div>
+</body>
+</html>
